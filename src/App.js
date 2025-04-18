@@ -1,21 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import FFTVisualization from './components/FFTVisualization';
 
 function App() {
-  const [audioData, setAudioData] = useState([]);
-  const [fftData, setFftData] = useState([]);
-  const [sampleSize, setSampleSize] = useState(256);
-  const [fftStages, setFftStages] = useState([]);
-
-  // データを子コンポーネントから受け取るハンドラー
-  const handleDataUpdate = (audio, fft, size, stages) => {
-    setAudioData(audio);
-    setFftData(fft);
-    setSampleSize(size);
-    if (stages && stages.length > 0) {
-      setFftStages(stages);
-    }
+  // 以前はコンポーネント間でデータを共有するために使用されていたが、
+  // 今はメインコンポーネントのみになったため、シンプルな構造に修正
+  const handleDataUpdate = () => {
+    // 将来的な拡張のために空の関数として残しておく
   };
 
   return (

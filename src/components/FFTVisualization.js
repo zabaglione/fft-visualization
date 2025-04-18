@@ -641,7 +641,7 @@ const FFTVisualization = ({ onDataUpdate }) => {
     //  }
     };
     
-  }, [audioData, fftData, componentSignals, highlightedFreq, frequency, signalType]);
+  }, [audioData, fftData, componentSignals, highlightedFreq, frequency, signalType, logarithmicScale, showPhaseInfo, windowFunction]);
   
   // 処理時間比較のグラフ
   const renderSpeedComparison = () => {
@@ -874,8 +874,17 @@ const FFTVisualization = ({ onDataUpdate }) => {
                 )}
               </p>
               <p className="text-sm">
-                <strong>振幅:</strong> {fftData[highlightedFreq] ? fftData[highlightedFreq].toFixed(4) : '0'}
+                <strong>振幅:</strong> {fftData[highlightedFreq] ? 
+                  (typeof fftData[highlightedFreq] === 'object' ? 
+                    fftData[highlightedFreq].magnitude.toFixed(4) : 
+                    fftData[highlightedFreq].toFixed(4)) : 
+                  '0'}
               </p>
+              {showPhaseInfo && fftData[highlightedFreq] && typeof fftData[highlightedFreq] === 'object' && fftData[highlightedFreq].phase !== undefined && (
+                <p className="text-sm">
+                  <strong>位相:</strong> {(fftData[highlightedFreq].phase * 180 / Math.PI).toFixed(2)}°
+                </p>
+              )}
             </div>
           )}
         </div>
