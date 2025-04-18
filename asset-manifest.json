@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fft-visualization/static/css/main.858335bf.css",
-    "main.js": "/fft-visualization/static/js/main.d51f4731.js",
+    "main.css": "/fft-visualization/static/css/main.f2df663a.css",
+    "main.js": "/fft-visualization/static/js/main.7a8009ed.js",
     "index.html": "/fft-visualization/index.html",
-    "main.858335bf.css.map": "/fft-visualization/static/css/main.858335bf.css.map",
-    "main.d51f4731.js.map": "/fft-visualization/static/js/main.d51f4731.js.map"
+    "main.f2df663a.css.map": "/fft-visualization/static/css/main.f2df663a.css.map",
+    "main.7a8009ed.js.map": "/fft-visualization/static/js/main.7a8009ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.858335bf.css",
-    "static/js/main.d51f4731.js"
+    "static/css/main.f2df663a.css",
+    "static/js/main.7a8009ed.js"
   ]
 }
