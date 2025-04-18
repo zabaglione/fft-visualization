@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fft-visualization/static/css/main.858335bf.css",
+    "main.js": "/fft-visualization/static/js/main.d51f4731.js",
+    "index.html": "/fft-visualization/index.html",
+    "main.858335bf.css.map": "/fft-visualization/static/css/main.858335bf.css.map",
+    "main.d51f4731.js.map": "/fft-visualization/static/js/main.d51f4731.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.858335bf.css",
+    "static/js/main.d51f4731.js"
+  ]
+}
